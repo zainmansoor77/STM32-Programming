@@ -109,11 +109,11 @@ int main(void)
 
 	  if (val == 0)
 	  {
-		  HAL_GPIO_WritePin(LD9_GPIO_Port, LD9_Pin, SET);
+		  HAL_GPIO_WritePin(LD9_GPIO_Port, LD9_Pin, RESET);
 	  }
 	  else
 	  {
-		  HAL_GPIO_WritePin(LD9_GPIO_Port, LD9_Pin, RESET);
+		  HAL_GPIO_WritePin(LD9_GPIO_Port, LD9_Pin, SET);
 	  }
     /* USER CODE BEGIN 3 */
   }

@@ -130,8 +130,8 @@ int main(void)
  80001f6:	2b00      	cmp	r3, #0
  80001f8:	d106      	bne.n	8000208 <main+0x40>
 	  {
-		  HAL_GPIO_WritePin(LD9_GPIO_Port, LD9_Pin, SET);
- 80001fa:	2201      	movs	r2, #1
+		  HAL_GPIO_WritePin(LD9_GPIO_Port, LD9_Pin, RESET);
+ 80001fa:	2200      	movs	r2, #0
  80001fc:	f44f 5180 	mov.w	r1, #4096	; 0x1000
  8000200:	4805      	ldr	r0, [pc, #20]	; (8000218 <main+0x50>)
  8000202:	f000 fdc1 	bl	8000d88 <HAL_GPIO_WritePin>
@@ -139,8 +139,8 @@ int main(void)
 	  }
 	  else
 	  {
-		  HAL_GPIO_WritePin(LD9_GPIO_Port, LD9_Pin, RESET);
- 8000208:	2200      	movs	r2, #0
+		  HAL_GPIO_WritePin(LD9_GPIO_Port, LD9_Pin, SET);
+ 8000208:	2201      	movs	r2, #1
  800020a:	f44f 5180 	mov.w	r1, #4096	; 0x1000
  800020e:	4802      	ldr	r0, [pc, #8]	; (8000218 <main+0x50>)
  8000210:	f000 fdba 	bl	8000d88 <HAL_GPIO_WritePin>
