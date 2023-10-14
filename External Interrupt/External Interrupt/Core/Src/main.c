@@ -62,7 +62,12 @@ static void MX_USB_PCD_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
 
+
+
+}
 /* USER CODE END 0 */
 
 /**
