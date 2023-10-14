@@ -65,7 +65,10 @@ static void MX_USB_PCD_Init(void);
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
 
-
+	if (GPIO_Pin == GPIO_PIN_0)
+	{
+		HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_9);
+	}
 
 }
 /* USER CODE END 0 */
